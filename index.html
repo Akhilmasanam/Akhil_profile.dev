@@ -610,7 +610,7 @@
   }
   .project-card:hover { border-color: rgba(0,229,160,0.3); transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
   .project-card:hover::after { opacity: 1; }
-  .project-card.featured { grid-column: span 2; }
+  .project-card.featuredexe{ grid-column: span 2; }
   .project-card.featured .project-content { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
   .project-num {
     font-family: var(--font-mono);
@@ -736,7 +736,9 @@
     .about-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
+    
     .project-card.featured { grid-column: span 1; }
+    
     .project-card.featured .project-content { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 1rem; text-align: center; }
   }
@@ -831,8 +833,10 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-avatar-wrap reveal">
+       
         <div class="about-avatar">
-          <div class="avatar-initials">AM</div>
+          <img src="./public/Akhil passport image (3).JPG">
+          <!-- <div class="avatar-initials">AM</div> -->
           <div class="avatar-badge">
             <div class="status-dot"></div>
             Open to work
@@ -892,6 +896,9 @@
           <span class="skill-tag primary">TypeScript</span>
           <span class="skill-tag primary">RxJS</span>
           <span class="skill-tag primary">JavaScript ES6+</span>
+          <span class="skill-tag primary">Angular Material</span>
+          <span class="skill-tag primary">Bootstrap</span>
+          <span class="skill-tag primary">NGRX/NGXS</span>
           <span class="skill-tag primary">HTML5 / CSS3</span>
           <span class="skill-tag primary">SCSS</span>
         </div>
@@ -950,6 +957,10 @@
           <span class="skill-tag tertiary">Angular CLI</span>
           <span class="skill-tag tertiary">VS Code</span>
           <span class="skill-tag tertiary">Code Splitting</span>
+           <span class="skill-tag tertiary">Postman</span>
+           <span class="skill-tag tertiary">copilot</span>
+           <span class="skill-tag tertiary">copilot</span>
+            <span class="skill-tag tertiary">claude AI</span>
         </div>
       </div>
     </div>
@@ -1069,7 +1080,7 @@
         </div>
       </div>
 
-      <div class="project-card reveal">
+      <div class="project-card  featured reveal">
         <div class="project-num">02</div>
         <div class="project-title">Telecom Staging Platform — Angular Migration</div>
         <div class="project-desc">
@@ -1081,9 +1092,18 @@
           <span class="project-tag">Standalone Components</span>
           <span class="project-tag">Zero-Downtime</span>
         </div>
+        <div>
+            <ul class="project-highlights">
+              <li>architectural migration from Angular 10 to Angular 20, systematically replacing deprecated patterns with Standalone Components and modern APIs.</li>
+              <li>Refactored legacy module-heavy code to a leaner Signals-based architecture</li>
+              <li>cutting code complexity and easing future maintenance</li>
+              <li>Reduced bundle size and initial load time significantly through Lazy Loading and optimized routing configuration</li>
+              <li>Resolved complex version-mismatch bugs during migration; delivered zero-downtime deployment to internal teams</li>
+            </ul>
+          </div>
       </div>
 
-      <div class="project-card reveal">
+      <div class="project-card reveal featured" >
         <div class="project-num">03</div>
         <div class="project-title">LCNC Automation Platform</div>
         <div class="project-desc">
@@ -1095,9 +1115,18 @@
           <span class="project-tag">Drag & Drop</span>
           <span class="project-tag">No-Code</span>
         </div>
+        <div>
+            <ul class="project-highlights">
+              <li> Built a no-code UI builder allowing non-technical users to assemble complex page workflows without writing code</li>
+              <li>Developed a JSON-driven form engine that conditionally renders UI elements based on runtime rules</li>
+              <li>Implemented drag-and-drop component library</li>
+              <li>Connected the builder to multiple backend APIs, </li>
+              <li> ensuring user-created automations triggered correct backend actions reliably</li>
+            </ul>
+          </div>
       </div>
 
-      <div class="project-card reveal">
+      <div class="project-card reveal featured">
         <div class="project-num">04</div>
         <div class="project-title">Web Hosting & Deployment Support</div>
         <div class="project-desc">
@@ -1109,9 +1138,18 @@
           <span class="project-tag">Performance</span>
           <span class="project-tag">DevOps</span>
         </div>
+        <div>
+            <ul class="project-highlights">
+              <li>Monitored frontend health post-deployment, catching UI stability issues before they impacted large user cohorts</li>
+              <li>Performed root-cause analysis distinguishing API-side vs. frontend-logic failures, coordinating fixes across dev and hosting teams.</li>
+              <li>Ensured parity between staging and production frontend behavior, </li>
+              <li>worked on improving the overall reliability of our apps</li>
+              <li>able to identify and resolve slow-loading components and API failures</li>
+            </ul>
+          </div>
       </div>
 
-      <div class="project-card reveal" style="grid-column: span 2;">
+      <div class="project-card reveal featured" >
         <div class="project-num">05</div>
         <div class="project-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
           <div>
@@ -1128,10 +1166,10 @@
             </div>
           </div>
           <ul class="project-highlights">
-            <li>Reusable Figma component library for entire product consistency</li>
-            <li>Pixel-accurate responsive HTML/CSS implementation across all screen sizes</li>
-            <li>UX friction-point analysis and flow improvements</li>
-            <li>A11y compliance across all delivered design specifications</li>
+            <li>Built a shared Design System in Figma with a reusable component library </li>
+            <li>every button, input, and modal stayed consistent across the entire application</li>
+            <li> responsive HTML/CSS layouts that held up across all screen sizes without sacrificing flexibility.</li>
+            <li> identified friction points in existing designs and implemented UX logic changes</li>
           </ul>
         </div>
       </div>
